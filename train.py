@@ -102,6 +102,6 @@ def train_model(model, criterion, optimizer, num_epochs=3):
 
 
 if __name__ == '__main__':
-    model_trained = train_model(model, criterion, optimizer, num_epochs=10)
+    model_trained = train_model(model, criterion, optimizer, num_epochs=20)
 
     torch.save(model_trained.state_dict(), 'models/pytorch/weights.h5')
